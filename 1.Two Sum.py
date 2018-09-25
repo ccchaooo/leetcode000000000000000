@@ -7,19 +7,18 @@
 # Because nums[0] + nums[1] = 2 + 7 = 9,
 # return [0, 1].
 
-
 class Solution:
-    def __init__(self, nums, target):
+    def twoSum(self, nums, target):
         self.nums = nums
         self.target = target
-
-    def twoSum(self):
         for i, x in enumerate(self.nums):
             for j, y in enumerate(self.nums):
                 if x + y == self.target:
-                    return [i, j]
-        return [-1, -1]
+                    ret = [i, j]
+                    return ret
+        return 0
 
 
-So = Solution(range(10), 5)
-So.twoSum()
+li = [3,2,4]
+So = Solution()
+print(So.twoSum(li,5))
