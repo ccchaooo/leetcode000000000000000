@@ -7,25 +7,30 @@
 # Because nums[0] + nums[1] = 2 + 7 = 9,
 # return [0, 1].
 
+
 class Solution:
     def twoSum(self, nums, target):
         self.nums = nums
         self.target = target
-        self.dict = {}
-
-        for i,index in self.nums:
-            self.dict[index] = i
-
-        print(self.dict)
-
-
-        for i, x in enumerate(self.nums):
-            for j, y in enumerate(self.nums):
-                if x + y == self.target:
-                    ret = [i, j]
+        items = [item(k, v) for k, v in enumerate(self.nums)]
+        items.sort(key=lambda x: x.v, reverse=False)
+        for i, x in enumerate(items):
+            j = i + 1
+            while j < len(items):
+                if x.v + items[j].v == target:
+                    ret = [x.k, items[j].k]
                     return ret
+                elif x.v + items[j].v > target:
+                    break
+                j = j + 1
         return 0
 
+
+class item(object):
+
+    def __init__(self, k, v):
+        self.k = k
+        self.v = v
 
 li = [3,2,4]
 So = Solution()
