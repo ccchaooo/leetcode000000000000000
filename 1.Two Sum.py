@@ -11,6 +11,14 @@ class Solution:
     def twoSum(self, nums, target):
         self.nums = nums
         self.target = target
+        self.dict = {}
+
+        for i,index in self.nums:
+            self.dict[index] = i
+
+        print(self.dict)
+
+
         for i, x in enumerate(self.nums):
             for j, y in enumerate(self.nums):
                 if x + y == self.target:
