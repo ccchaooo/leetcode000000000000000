@@ -9,13 +9,19 @@
 # Explanation: 342 + 465 = 807.
 
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 class Solution:
-    __init__(self,l1,l2):
+    def __init__(self, l1, l2):
+        l1pre = ""
+        for i,x in l1 :
+            if i == 0 :
+                ListNode[x]
+            eles:
+                ListNode[x]
 
 
     def addTwoNumbers(self, l1, l2):
@@ -23,8 +29,8 @@ class Solution:
         self.s2= "".join(l2.reverse())
         return self.s1,self.s2
 
-
-l1=[2,4,3]
-l2=[5,6,4]
-so = Solution()
-so.addTwoNumbers(l1,l2)
+#
+# l1=[2,4,3]
+# l2=[5,6,4]
+# so = Solution()
+# so.addTwoNumbers(l1,l2)
