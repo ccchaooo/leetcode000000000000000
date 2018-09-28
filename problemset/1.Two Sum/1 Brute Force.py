@@ -32,6 +32,7 @@ class item(object):
         self.k = k
         self.v = v
 
+
 li = [3,2,4]
 So = Solution()
 print(So.twoSum(li,5))
