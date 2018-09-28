@@ -15,19 +15,20 @@ class ListNode:
         self.next = None
 
 class Solution:
-    def __init__(self, l1, l2):
-        l1pre = ""
-        for i,x in l1 :
-            if i == 0 :
-                ListNode[x]
-            eles:
-                ListNode[x]
-
 
     def addTwoNumbers(self, l1, l2):
-        self.s1= "".join(l1.reverse())
-        self.s2= "".join(l2.reverse())
-        return self.s1,self.s2
+        # 链表长度
+        # 总数
+        sum = 0
+
+        ret,ent = self.sum2(l1.val, l2.val)
+
+        sum = ret
+
+        return
+
+    def sum2 (self, x, y):
+        return ( x + y ) % 10, x + y >= 10
 
 #
 # l1=[2,4,3]
